@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #9C89FF;
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 45%;
+    
+    margin: 0 auto;
+    
+}
+.container h1{
+    color: white;
+}
+
+.intake{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+}
+.addingSection{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.addingSection input{
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.task:last-of-type{
+    border-bottom: none;
+}
+.task input{
+    margin: 0 10px;
+}
+.buttons{
+    margin-left: auto;
+}
+.container button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.buttons button:last-child{
+    margin-right: 5px;
+}
+
+.editForm{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.clearSection{
+    height: 40px;
+    width: 100%;
+}
+.clearSection button{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(198, 197, 197);
+}
+.clearSection button:hover{
+    background-color: lightgray;
+}
+
+
+@media (max-width: 700px){
+    .container{
+        min-width: 80vw;
+    }
+}
+
+

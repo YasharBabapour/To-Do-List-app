@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>T O D O</h1>
+        <div class="addingSection">
+            <input type="text" name="task" id="intake" class="intake" placeholder="Write your task here ..." >
+            <button onclick="adding()">Add</button>
+        </div>
+        
+        <div class="tasks" id="tasks">
+            
+        </div>
+        <div class="clearSection">
+            <button onclick="clearData()">Clear</button>
+        </div>
+    </div>
+
+    <form action="" id = "editForm" class="editForm" onsubmit="return false">
+        <label for="editingSection">Edit : </label>
+        <input type="text" id="editedText">
+        <button id="submitBtn">Submit</button>
+        
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
